@@ -1,0 +1,71 @@
+/* NAVIGATION BAR */
+
+.nail1 {
+  font-family: "Sofia";
+  font-size: 100px;
+}
+
+.code1{
+  font-family: "Orbitron";
+  font-size: 75px;
+}
+
+.navbar-brand{
+	font-family:"Sofia";
+	font-size: 20px;
+}
+.code-title{
+	font-family: "Orbitron";
+	font-size: 15px;
+}
+.navbar{
+	font-family: "Orbitron";
+	background-color: black;
+}
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+h1{
+  margin-bottom: 0px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
